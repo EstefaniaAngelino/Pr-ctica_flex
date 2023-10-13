@@ -144,6 +144,7 @@ hero > img {
   min-height: 400px;
 }
 
+
 .choose-section > p {
   width: 40%;
   display: flex;
@@ -171,11 +172,39 @@ hero > img {
  
 }
 
+@media screen and (max-width: 640px) {
+  .choose-section {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .choose-div {
+    border-left: none;
+  }
+}
+
 .services-section {
   display: flex;
   gap: 15%;
   max-width: 60%;
   min-width: 80%;
+}
+
+
+@media screen and (max-width: 640px) {
+  .services-section {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+  }
+  .core-values {
+    width: 100%;
+  }
+  .values-container{
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .core-values{
   display: flex;
@@ -222,6 +251,8 @@ hero > img {
   gap: 1.5rem;
 
 }
+
+
 
 .emoji {
   font-size: 2rem;
